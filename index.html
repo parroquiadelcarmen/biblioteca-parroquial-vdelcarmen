@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biblioteca Parroquial Nstra. Sra. del Carmen</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      background: #fdf6f0;
-      color: #2c2c2c;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #3b2e20;
+      background: url('TURAIZ-DE-FONDO.jpg') center center / cover no-repeat fixed;
     }
-    h1 {
-      color: #5a3e2b;
+
+    .overlay {
+      background: rgba(255, 248, 235, 0.85);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
       text-align: center;
+      margin-bottom: 40px;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #4a3119;
+      margin-bottom: 0.5rem;
     }
-    .button {
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #7d5e3d;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .hero img {
+      max-width: 200px;
+      border-radius: 10px;
+      border: 3px solid #8b5e3c;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .buttons a {
       display: inline-block;
-      background-color: #8c5c3f;
-      color: white;
-      padding: 10px 20px;
-      margin: 20px auto;
-      text-align: center;
-      border-radius: 5px;
+      margin: 12px;
+      padding: 14px 26px;
+      background: #80521c;
+      color: #fff;
+      border-radius: 24px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      transition: background 0.3s ease;
     }
-    .button:hover {
-      background-color: #a66b4c;
+
+    .buttons a:hover {
+      background: #a46f3b;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #5e421c;
+      padding-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Biblioteca Parroquial <br>Nstra. Sra. del Carmen</h1>
-  <p>Bienvenidos al sitio web de la biblioteca parroquial. Aquí podrás consultar los libros disponibles, solicitar uno en préstamo y también colaborar donando o prestando desde tu hogar.</p>
-  <p><strong>📚 ¿Querés ver el catálogo?</strong></p>
-  <a class="button" href="https://docs.google.com/spreadsheets/d/1eTpeUWyAtdpUyLboNEqIOAvXBg_rDacJlGrW9LTgcMY/edit?usp=drive_link" target="_blank">Ver libros</a>
-  <p><strong>📬 ¿Querés solicitar un libro?</strong></p>
-  <a class="button" href="mailto:parroquiadelcarmenmgue@gmail.com?subject=Solicitud%20de%20libro">Solicitar por correo</a>
+  <div class="overlay">
+    <header>
+      <h1>Biblioteca Parroquial<br> Nstra. Sra. del Carmen</h1>
+      <p>Lectura • Formación • Comunidad • Fe</p>
+    </header>
+
+    <div class="hero">
+      <img src="virgen-del-carmen.jpg" alt="Virgen del Carmen" />
+      <img src="gif-velitas.gif" alt="Velitas encendidas" />
+      <img src="escapulario.png" alt="Santo Escapulario" />
+    </div>
+
+    <div class="buttons">
+      <a href="https://docs.google.com/spreadsheets/d/TU_ID_CATALOGO/pubhtml" target="_blank">📚 Ver Catálogo</a>
+      <a href="https://docs.google.com/forms/d/e/TU_ID_FORM/viewform?usp=sf_link" target="_blank">📝 Donar Libro</a>
+      <a href="mailto:bibliotecacarmen.malargue@gmail.com?subject=Solicitud%20de%20libro">✉️ Solicitar Libro</a>
+      <a href="https://wa.me/5492610000000?text=Hola,%20quiero%20solicitar%20un%20libro" target="_blank">📱 Contacto WhatsApp</a>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Biblioteca Parroquial Nstra. Sra. del Carmen – Malargüe<br>
+      Un proyecto de fe, cultura y comunidad en honor a Nuestra Madre del Carmen.
+    </div>
+  </div>
 </body>
 </html>
